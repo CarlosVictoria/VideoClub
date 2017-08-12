@@ -3,11 +3,10 @@
 class NavbarController {
   //start-non-standard
 
+
   constructor(AuthService){
     this.AuthService = AuthService;
   }
-
-
 
 
 

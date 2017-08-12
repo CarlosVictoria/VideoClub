@@ -3,6 +3,7 @@
 (function(){
 
 class UsuariosCreateComponent {
+<<<<<<< HEAD
   constructor(usuariosService, $state) {
     this.usuariosService = usuariosService;
     this.$state = $state;
@@ -20,6 +21,7 @@ class UsuariosCreateComponent {
   }
 }
 UsuariosCreateComponent.$inject = ['usuariosService','$state'];
+
 angular.module('videoClubApp')
   .component('usuariosCreate', {
     templateUrl: 'app/usuarios/usuarios-create/usuarios-create.html',

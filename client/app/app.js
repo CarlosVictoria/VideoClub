@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('videoClubApp', [
+<<<<<<< HEAD
 	'videoClubApp.constants',
 	 'ngCookies',
 	 'ngResource',
@@ -18,5 +19,6 @@ angular.module('videoClubApp', [
   })
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise('/');
+
     $locationProvider.html5Mode(true);
   });
