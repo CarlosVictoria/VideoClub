@@ -7,6 +7,7 @@ class UsuariosCreateComponent {
     this.usuariosService = usuariosService;
     this.$state = $state;
     this.showValidaDocumento = false;
+
   }
 
   createUser(){
@@ -20,6 +21,7 @@ class UsuariosCreateComponent {
   	})
   }
 
+
   validaNumDocumento(){
     console.log("NumDocumento", this.usuario.numDocumento);
     this.usuariosService.query({numDocumento:this.usuario.numDocumento}).$promise
@@ -31,6 +33,7 @@ class UsuariosCreateComponent {
       console.log("No existe")
     })
   }
+
 }
 UsuariosCreateComponent.$inject = ['usuariosService','$state'];
 

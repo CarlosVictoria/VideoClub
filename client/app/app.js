@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('videoClubApp', [
+
 	'videoClubApp.constants',
 	 'ngCookies',
 	 'ngResource',
