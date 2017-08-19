@@ -1,0 +1,39 @@
+
+<div>This is the usuarios-create view.</div>
+
+<form name="userForm" ng-submit="vm.createUser()">
+<label for="">Tipo Documento</label>
+	<input type="text" ng-model="vm.usuario.tipoDocumento.id">
+
+<div class="form-group">
+
+	<label for="">Documento</label>
+	<input type="text" class="form-control" ng-blur"vm.validarNumDocumento" ng-model="vm.usuario.numDocumento">
+</div>
+
+<div ng-show="vm.showValidaDocumento" class="alert alert-danger" role="alert">
+	<p>El numero de documento ya se encuentra registrado</p>
+</div>
+
+<label for="">Apellidos</label>
+	<input type="text" ng-model="vm.usuario.apellidos">
+
+	<label for="">Nombres</label>
+	<input type="text" ng-model="vm.usuario.nombres">
+
+	<label for="">Email</label>
+	<input type="text" ng-model="vm.usuario.email">
+
+	<label for="">password</label>
+	<input type="password" ng-model="vm.usuario.password">
+
+	<label for="">Sexo</label>
+	<input type="text" ng-model="vm.usuario.sexo">
+
+	<label for="">Ciudad</label>
+	<input type="text" ng-model="vm.usuario.ciudad.id">
+
+
+<button type="submit">Registrar</button>
+
+</form>
